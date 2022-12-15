@@ -1,0 +1,82 @@
+Last login: Fri Dec  9 08:58:26 on ttys000
+josueaguirre@Davids-MBP ~ % learn_git_again
+zsh: command not found: learn_git_again
+josueaguirre@Davids-MBP ~ % mkdir learn_git_again
+mkdir: learn_git_again: File exists
+josueaguirre@Davids-MBP ~ % cd learn_git_again
+josueaguirre@Davids-MBP learn_git_again % touch third.txt
+josueaguirre@Davids-MBP learn_git_again % git init
+Reinitialized existing Git repository in /Users/josueaguirre/learn_git_again/.git/
+josueaguirre@Davids-MBP learn_git_again % git add third.txt
+josueaguirre@Davids-MBP learn_git_again % git commit -m "adding third.txt"
+[main (root-commit) 44fe354] adding third.txt
+ Committer: Josue Aguirre <josueaguirre@Davids-MBP.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 third.txt
+josueaguirre@Davids-MBP learn_git_again % git log. git log
+git: 'log.' is not a git command. See 'git --help'.
+
+The most similar command is
+	log
+josueaguirre@Davids-MBP learn_git_again % touch fourth.txt
+josueaguirre@Davids-MBP learn_git_again % git add fourth.txt
+josueaguirre@Davids-MBP learn_git_again % git commit -m "adding fourth.txt"
+[main 1ab9ff5] adding fourth.txt
+ Committer: Josue Aguirre <josueaguirre@Davids-MBP.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 fourth.txt
+josueaguirre@Davids-MBP learn_git_again % rm third.txt
+josueaguirre@Davids-MBP learn_git_again % git add third.txt
+josueaguirre@Davids-MBP learn_git_again % git commit -m "removing third.txt"
+[main 124a2f0] removing third.txt
+ Committer: Josue Aguirre <josueaguirre@Davids-MBP.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ delete mode 100644 third.txt
+josueaguirre@Davids-MBP learn_git_again % git log. git log
+git: 'log.' is not a git command. See 'git --help'.
+
+The most similar command is
+	log
+josueaguirre@Davids-MBP learn_git_again % core.pager=cat
+zsh: command not found: core.pager=cat
+josueaguirre@Davids-MBP learn_git_again % git config -- global 
+error: key does not contain a section: global
+josueaguirre@Davids-MBP learn_git_again % git config -- global --list
+error: key does not contain a section: global
+josueaguirre@Davids-MBP learn_git_again % 
